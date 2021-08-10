@@ -1,0 +1,257 @@
+body{
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    color: #111238;
+}
+
+.bg-service-1{
+    background-image: url('../img/bg-service-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-service-2{
+    background-image: url('../img/bg-service-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-service-3{
+    background-image: url('../img/bg-service-3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-service-4{
+    background-image: url('../img/bg-service-4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-service-5{
+    background-image: url('../img/bg-service-5.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-service-6{
+    background-image: url('../img/bg-service-6.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-service-7{
+    background-image: url('../img/bg-service-7.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-service-8{
+    background-image: url('../img/bg-service-8.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+}
+.active{
+    background: #eff3ff;
+    font-weight: 800;
+}
+.header-logo{
+    height: 90px;
+    line-height: 90px;
+}
+
+.header-logo img {
+    height: 60px;
+    margin: 15px 10px 15px 0px;
+}
+
+.header-logo-text{
+    font-size: 30px;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.header-connect-phone{
+    display: block;
+    font-size: 18px;
+}
+.header-connect-email{
+    font-size: 14px;
+}
+.menu{
+    height: 100px ;
+    background-color: #344D90;
+    
+}
+.menu-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    display: contents;
+    
+}
+nav{
+    justify-content: space-between;
+}
+.menu-list li {
+    display: inline-block;    
+    vertical-align: middle;
+}
+.menu a{
+    color:white;
+}
+.block-margin{
+    display: block;
+    margin-top: 20px;
+}
+
+.title{
+    display: block;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.company{
+    text-align: justify;
+}
+.right-menu{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    background: #f6f6f6;
+    border-radius: 2px;
+}
+.right-menu li{
+    margin-left: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
+    //font-weight: 600;
+}
+.right-menu li:hover{
+    background: #eff3ff;
+    font-weight: 800;
+}
+.right-menu a{
+    color: #121b33;
+}
+
+
+.card-service{
+    min-height: 410px;
+    text-align: center;
+    color:white;
+    margin-bottom: 10px;
+
+}
+.body-center{
+    flex-direction: column;
+    justify-content: center ;
+}
+.card-service-title{
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    
+}
+.card-service-icon{
+    margin-bottom: 20px;
+}
+.card-service-icon img{
+    width: 75px;
+}
+.card-service-text{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.service{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+}
+.service-work{
+    flex: 1 16%;
+}
+.card-service-footer a{
+    color:white;
+}
+.card-service-footer a:hover{
+    color:white;
+    font-weight: 700;
+}
+
+.partners-card{
+    min-height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.partners-logo-img{
+    width: 120px;
+}
+.partners-logo-img-abbmo{
+    width: 110px;
+}
+.contact-title{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.content-text{
+    font-size: 18px;
+}
+
+.footer{
+    background: #344D90;
+    display: block;
+    height: auto;
+    color:white;
+}
+
+.footer-logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+.footer-info{
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+.footer-confident{
+    font-size: 14px;
+    font-weight: 300;
+}
+.align-end{
+    text-align: end;
+}
+
+.footer-text-title{
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.footer-ul-menu{
+    list-style: none;
+    padding-left: 0px;
+    font-size: 13px;
+    font-weight: 200;
+}
+.footer-ul-menu li{
+    margin-bottom: 5px;
+}
+.footer-ul-menu a{
+  text-decoration: none;
+  color:white;
+}
+.footer-ul-menu a:hover{
+    background:#004a7c;
+    padding: 5px;
+    font-weight: 400;
+  }
+ /* CSS для ширины от 768px до 991px */
+@media (max-width: 991px) {
+    
+
+}
