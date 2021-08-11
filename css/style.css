@@ -1,5 +1,14 @@
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    -ms-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+}
+
 body{
     margin: 0;
+    padding: 0;
     font-family: 'Exo 2', sans-serif;
     font-size: 16px;
     color: #111238;
@@ -53,9 +62,16 @@ a{
     background: #eff3ff;
     font-weight: 800;
 }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
 .header-logo{
-    height: 90px;
-    line-height: 90px;
+    font-weight: bold;
 }
 
 .header-logo img {
@@ -69,6 +85,9 @@ a{
     vertical-align: middle;
 }
 
+.header-connect {
+    text-align: right;
+}
 .header-connect-phone{
     display: block;
     font-size: 18px;
@@ -77,31 +96,77 @@ a{
     font-size: 14px;
 }
 .menu{
-    height: 100px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
     background-color: #344D90;
-    
+    margin-bottom: 20px;
 }
-.menu-list{
+.menu-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     margin: 0;
-    list-style: none;
     width: 100%;
-    display: contents;
-    
 }
+.menu-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+.menu-link:hover, .menu-link:focus  {
+    text-decoration: underline;
+}
+
+/* Burger menu */
+.menu-btn {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 15px 25px;
+    color: #333333;
+    cursor: pointer;
+    display: none;
+}
+/* Burger menu end */
+
+/* Media query for mobile phones */
+@media (max-width: 800px) {
+    .header-logo-text { 
+        font-size: 0.8rem;
+    }
+    .header-connect-phone, .header-connect-email {
+        font-size: 0.75rem;
+    }
+    .menu {
+        display: none;
+        align-items: start;
+        height: 100vh;
+    }
+    .menu-btn {
+        display: block;
+        font-size: 0.8rem;
+    }
+    .menu-links-container {
+        flex-direction: column;
+    }
+}
+/* Media query for mobile phones end */
+
 nav{
     justify-content: space-between;
 }
-.menu-list li {
-    display: inline-block;    
-    vertical-align: middle;
-}
+
 .menu a{
     color:white;
 }
 .block-margin{
     display: block;
-    margin-top: 20px;
 }
 
 .title{
