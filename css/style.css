@@ -95,7 +95,8 @@ a{
     display: block;
     font-size: 14px;
 }
-.menu{
+/* Menu */
+.menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,23 +104,50 @@ a{
     background-color: #344D90;
     margin-bottom: 20px;
 }
-.menu-links-container {
+.menu-nav {
+    display: flex; 
+}
+.menu-nav * {
+    font: 500 15px 'Exo 2';
+}
+.menu-nav__link {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #344d90;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.2s;
+}
+.menu-nav__link:hover {
+    background-color: #2e4585
+}
+.menu-nav__link-group {
+    position: absolute;
+    min-width: 100%;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    z-index: 1  ;
+}
+.menu-nav__link:hover .menu-nav__link-group {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
+}
+.menu-nav__link-main {
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    margin: 0;
-    width: 100%;
 }
-.menu-link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 15px;
-}
-.menu-link:hover, .menu-link:focus  {
-    text-decoration: underline;
-}
+/* Menu end */
 .text-right {
     text-align: right !important;
 }
@@ -129,7 +157,6 @@ a{
 .text-center { 
     text-align: center !important;
 }
-
 /* Burger menu */
 .menu-btn {
     background: none;
@@ -142,7 +169,7 @@ a{
 /* Burger menu end */
 
 /* Media query for mobile phones */
-@media (max-width: 800px) {
+@media only screen and (max-width: 764px) {
     .header-connect-phone, .header-connect-email {
         font-size: 11px;
     }
@@ -151,12 +178,19 @@ a{
         align-items: start;
         height: 100vh;
     }
+    .menu-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu-nav__link {
+        text-align: center;
+    }
     .menu-btn {
         display: block;
     }
-    .menu-links-container {
-        flex-direction: column;
-    } 
+    .menu-nav__link-main {
+        height: 40px;
+    }
     .header-logo img {
         width: 30px;
     }
@@ -164,7 +198,7 @@ a{
         font-size: 11px;
     }
 }
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
     .header-logo img {
         width: 28px;
     }
@@ -172,7 +206,7 @@ a{
 /* Media query for mobile phones end */
 
 
-nav{
+nav {
     justify-content: space-between;
 }
 
